@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+}
+
+#game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    border: 3px solid white;
+}
+
+#score-board {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+#bricks {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.brick {
+    position: absolute;
+    width: 60px;
+    height: 20px;
+    background-color: red;
+}
+
+#paddle {
+    position: absolute;
+    width: 80px;
+    height: 20px;
+    background-color: white;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#pause-menu {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+}
+
+#pause-menu button {
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#win-dialog {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+}
+
+#win-dialog button {
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#lost-dialog {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+}
+
+#lost-dialog button {
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
